@@ -10,7 +10,7 @@ YKExpandLabel add more button to label like AppStore.
 # Usage #
 
 ``` objective-c
-YKExpandLabel *label = [[YKExpandLabel alloc] initWithFrame:frame numberOfLines:3 moreText:@" More ▾"];
+YKExpandLabel *label = [[YKExpandLabel alloc] initWithFrame:frame numberOfLines:3 moreText:@"More ▾"];
 label.backgroundColor = [UIColor clearColor];
 label.font = [UIFont systemFontOfSize:12.0f];
 [label setFullText:text];

@@ -10,6 +10,8 @@
 
 @interface YKExpandLabel : UILabel
 
+@property (strong, nonatomic) NSString *ellipsisString;
+
 - (id)initWithFrame:(CGRect)frame
       numberOfLines:(NSInteger)numberOfLines
            moreText:(NSString *)moreText;

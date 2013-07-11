@@ -25,6 +25,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         _moreText = moreText;
+        _ellipsisString = @"\u2026"; // Unicode Character 'HORIZONTAL ELLIPSIS' (U+2026)
         
         self.numberOfLines = numberOfLines;
         self.userInteractionEnabled = YES;
@@ -52,8 +53,9 @@
     _fullText = fullText;
     
     if ([self numberOfLinesForText:_fullText] > self.numberOfLines) {
-        NSMutableString *string = [[fullText stringByAppendingString:_moreText] mutableCopy];
-        NSRange range = NSMakeRange(string.length - (_moreText.length + 1), 1);
+        NSString *ellipsisAndMoreText = [NSString stringWithFormat:@"%@ %@", _ellipsisString, _moreText];
+        NSMutableString *string = [[fullText stringByAppendingString:ellipsisAndMoreText] mutableCopy];
+        NSRange range = NSMakeRange(string.length - (ellipsisAndMoreText.length + 1), 1);
         
         while ([self numberOfLinesForText:string] > self.numberOfLines) {
             [string deleteCharactersInRange:range];
