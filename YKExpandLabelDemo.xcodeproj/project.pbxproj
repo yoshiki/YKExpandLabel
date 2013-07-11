@@ -16,9 +16,12 @@
 		D6EAE658178E892E0067AA06 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D6EAE657178E892E0067AA06 /* Default.png */; };
 		D6EAE65A178E892E0067AA06 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6EAE659178E892E0067AA06 /* Default@2x.png */; };
 		D6EAE65C178E892E0067AA06 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6EAE65B178E892E0067AA06 /* Default-568h@2x.png */; };
+		D6EAE666178E89CA0067AA06 /* YKExpandLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EAE665178E89CA0067AA06 /* YKExpandLabel.m */; };
+		D6EAE669178E8A8A0067AA06 /* SampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EAE668178E8A8A0067AA06 /* SampleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		211DD601FAD84C14AF3612D4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6EAE642178E892E0067AA06 /* YKExpandLabelDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YKExpandLabelDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6EAE645178E892E0067AA06 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D6EAE647178E892E0067AA06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -32,6 +35,10 @@
 		D6EAE657178E892E0067AA06 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		D6EAE659178E892E0067AA06 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D6EAE65B178E892E0067AA06 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D6EAE664178E89CA0067AA06 /* YKExpandLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YKExpandLabel.h; path = YKExpandLabel/YKExpandLabel.h; sourceTree = "<group>"; };
+		D6EAE665178E89CA0067AA06 /* YKExpandLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YKExpandLabel.m; path = YKExpandLabel/YKExpandLabel.m; sourceTree = "<group>"; };
+		D6EAE667178E8A8A0067AA06 /* SampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleViewController.h; sourceTree = "<group>"; };
+		D6EAE668178E8A8A0067AA06 /* SampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +58,7 @@
 		D6EAE639178E892E0067AA06 = {
 			isa = PBXGroup;
 			children = (
+				D6EAE662178E89350067AA06 /* YKExpandLabel */,
 				D6EAE64B178E892E0067AA06 /* YKExpandLabelDemo */,
 				D6EAE644178E892E0067AA06 /* Frameworks */,
 				D6EAE643178E892E0067AA06 /* Products */,
@@ -71,6 +79,7 @@
 				D6EAE645178E892E0067AA06 /* UIKit.framework */,
 				D6EAE647178E892E0067AA06 /* Foundation.framework */,
 				D6EAE649178E892E0067AA06 /* CoreGraphics.framework */,
+				211DD601FAD84C14AF3612D4 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -80,6 +89,8 @@
 			children = (
 				D6EAE654178E892E0067AA06 /* AppDelegate.h */,
 				D6EAE655178E892E0067AA06 /* AppDelegate.m */,
+				D6EAE667178E8A8A0067AA06 /* SampleViewController.h */,
+				D6EAE668178E8A8A0067AA06 /* SampleViewController.m */,
 				D6EAE64C178E892E0067AA06 /* Supporting Files */,
 			);
 			path = YKExpandLabelDemo;
@@ -97,6 +108,15 @@
 				D6EAE65B178E892E0067AA06 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6EAE662178E89350067AA06 /* YKExpandLabel */ = {
+			isa = PBXGroup;
+			children = (
+				D6EAE664178E89CA0067AA06 /* YKExpandLabel.h */,
+				D6EAE665178E89CA0067AA06 /* YKExpandLabel.m */,
+			);
+			name = YKExpandLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +186,8 @@
 			files = (
 				D6EAE652178E892E0067AA06 /* main.m in Sources */,
 				D6EAE656178E892E0067AA06 /* AppDelegate.m in Sources */,
+				D6EAE666178E89CA0067AA06 /* YKExpandLabel.m in Sources */,
+				D6EAE669178E8A8A0067AA06 /* SampleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +267,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YKExpandLabelDemo/YKExpandLabelDemo-Prefix.pch";
 				INFOPLIST_FILE = "YKExpandLabelDemo/YKExpandLabelDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -256,6 +279,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YKExpandLabelDemo/YKExpandLabelDemo-Prefix.pch";
 				INFOPLIST_FILE = "YKExpandLabelDemo/YKExpandLabelDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -280,6 +304,7 @@
 				D6EAE661178E892E0067AA06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
